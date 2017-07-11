@@ -21,6 +21,10 @@ module Ocman
       end
     end
 
+    def get(path)
+      connection.get( uri(path) )
+    end
+
     def delete(path)
       connection.delete( uri(path) )
     end

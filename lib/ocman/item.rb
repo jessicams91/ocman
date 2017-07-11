@@ -4,6 +4,10 @@ module Ocman
       Ocman::Dav.new.put(file, URI.encode(path), options)
     end
 
+    def self.get(path)
+      Ocman::Dav.new.get(URI.encode(path))
+    end
+
     def self.delete(path)
       Ocman::Dav.new.delete(URI.encode(path))
     end

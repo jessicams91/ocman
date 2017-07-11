@@ -41,6 +41,10 @@ module Ocman
     Ocman::Item.create(file_path, path, options)
   end
 
+  def self.get(path)
+    Ocman::Item.get(path)
+  end
+
   def self.delete(path)
     Ocman::Item.delete(path)
   end
